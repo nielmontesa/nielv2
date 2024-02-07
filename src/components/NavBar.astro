@@ -1,0 +1,90 @@
+<nav
+  class="xl:flex w-full justify-evenly py-6 items-center xl:px-36 border-b-[var(--border-gray)] border-b focus"
+  id="shadows">
+  <div class="flex gap-2 items-center justify-evenly">
+    <div class="flex gap-2 items-center xl:justify-center">
+      <img src="niel-tortl.svg" alt="" />
+      <span class="text-xl font-bold"> niel montesa</span>
+    </div>
+
+    <button
+      data-collapse-toggle="navbar-default"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[var(--white)] rounded-lg md:hidden bg-[var(--cta-gray)]"
+      aria-controls="navbar-default"
+      aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14">
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"></path>
+      </svg>
+    </button>
+  </div>
+
+  <ul
+    class="lg:flex gap-4 px-6 py-3 rounded-xl bg-[var(--nav-gray)] border-[var(--border-gray)] border drop-shadow-md shadow-inner transition active:scale-90 hover:border-neutral-600 hover:scale-[1.01] hidden m-2 xl:m-0">
+    <li>
+      <a
+        href="#"
+        class="text-[var(--inactive-gray)] hover:text-[var(--white)] transition ease-in"
+        >Web Design</a
+      >
+    </li>
+    <li>
+      <a
+        href="#"
+        class="text-[var(--inactive-gray)] hover:text-[var(--white)] transition ease-in"
+        >Book Covers</a
+      >
+    </li>
+    <li>
+      <a
+        href="#"
+        class="text-[var(--inactive-gray)] hover:text-[var(--white)] transition ease-in"
+        >Writers</a
+      >
+    </li>
+    <li>
+      <a
+        href="#"
+        class="text-[var(--inactive-gray)] hover:text-[var(--white)] transition ease-in"
+        >About</a
+      >
+    </li>
+  </ul>
+
+  <button
+    class="py-3 px-6 bg-[var(--cta-gray)] rounded-xl border border-[var(--border-gray)] font-bold hover:scale-[1.02] transition ease-in active:scale-90 hover:border-neutral-500 xl:block hidden xl:m-0 mx-2 xl:w-auto w-[96%]"
+    id="shadow">Get a Quote</button
+  >
+</nav>
+
+<script>
+  // Select the hamburger button and the menu to toggle
+  const button = document.querySelector(
+    '[data-collapse-toggle="navbar-default"]'
+  );
+  const menu = document.querySelector("#shadows ul");
+  const quoteButton = document.getElementById("shadow");
+
+  // Add event listener to the hamburger button
+  button.addEventListener("click", function () {
+    // Toggle the 'hidden' class on the menu
+    menu.classList.toggle("hidden");
+    quoteButton.classList.toggle("hidden");
+
+    // Toggle aria-expanded attribute
+    const ariaExpanded =
+      button.getAttribute("aria-expanded") === "true" ? "false" : "true";
+    button.setAttribute("aria-expanded", ariaExpanded);
+  });
+</script>
