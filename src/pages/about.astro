@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Niel Montesa // About Me">
+  <main>
+    <section
+      class="border-b border-b-[var(--border-gray)] xl:flex justify-between items-center xl:px-36 px-10">
+      <div class="py-10">
+        <h1 class="text-4xl font-bold">Niel Montesa</h1>
+        <p class="font-medium mt-4">Graphic Designer & Web Developer</p>
+      </div>
+      <div class="xl:py-10 pb-10 xl:text-right">
+        <p class="xl:flex justify-end items-center gap-1 text-[#8c8c8c]">
+          <Icon
+            name="mdi:location"
+            class="inline bg-inherit text-[var(--footer-gray)] text-lg"
+          />Makati, Philippines
+        </p>
+        <p class="font-medium mt-4 flex items-center">
+          <img src="online.png" alt="" class="w-3 inline-block mr-2" />Currently
+          open for freelance work!
+        </p>
+      </div>
+    </section>
+
+    <div class="relative flex justify-center xl:h-16 xl:mb-24 mb-48">
+      <img
+        src="portrait.png"
+        alt="Portrait of me!"
+        class="absolute z-40 xl:bottom-[-50%] bottom-[-160px]"
+      />
+    </div>
+
+    <section class="xl:px-96 px-10 mb-20">
+      <div class="xl:grid grid-cols-5 w-full gap-48 text-base leading-loose">
+        <p class="font-bold pb-4 xl:p-auto">About</p>
+        <p class="col-span-3">
+          I spend most of my days doing three things: designing, developing, and
+          writing about the first two. My skills fall under the scope of UI
+          design, graphic design, and front-end development. With a dash of
+          writing and brand design added on top. As I write this, I am currently
+          working as a Graphic Designer for ShineBright. On the side, I am a
+          musician. I play guitar, bass, ukelele, and I sing! I write and
+          produce moody rock songs that help me cope with my workaholic
+          tendencies. Or at least I try to!
+        </p>
+        <div class="flex gap-2">
+          <a href="#">
+            <Icon
+              name="mdi:instagram"
+              class="inline bg-inherit text-[var(--footer-gray)] hover:text-[var(--white)] text-2xl"
+            />
+          </a>
+          <a href="#">
+            <Icon
+              name="mdi:twitter"
+              class="inline bg-inherit text-[var(--footer-gray)] hover:text-[var(--white)] text-2xl"
+            />
+          </a>
+          <a href="#">
+            <Icon
+              name="mdi:linkedin"
+              class="inline bg-inherit text-[var(--footer-gray)] hover:text-[var(--white)] text-2xl"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        class="xl:grid grid-cols-5 w-full gap-48 text-base leading-loose mt-20">
+        <p class="font-bold pb-4 xl:p-auto">Experience</p>
+        <div class="col-span-3">
+          <div
+            class="rounded-lg px-6 py-3 border border-[var(--border-gray)] bg-[var(--nav-gray)]">
+            <span class="font-semibold text-[var(--inactive-gray)] text-sm"
+              >Graphic Designer</span
+            >
+            <h3 class="font-bold text-lg">ShineBright</h3>
+            <span class="text-sm">2023-Present</span>
+            <p class="text-base text-[var(--footer-gray)] leading-loose">
+              Deals with writing, editing, and designing of content and
+              marketing material for multiple Instagram pages. Manages and
+              organizes content calendar to ensure smooth and consistent
+              publishing of content.
+            </p>
+          </div>
+          <div
+            class="rounded-lg px-6 py-3 border border-[var(--border-gray)] bg-[var(--nav-gray)] mt-4">
+            <span class="font-semibold text-[var(--inactive-gray)] text-sm"
+              >Content & Design Assistant</span
+            >
+            <h3 class="font-bold text-lg">Freemaker</h3>
+            <span class="text-sm">2022-Present</span>
+            <p class="text-base text-[var(--footer-gray)] leading-loose">
+              Works closely with founder of a data science startup to help with
+              design, writing and various administrative tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="xl:grid grid-cols-5 w-full gap-48 text-base leading-loose mt-20">
+        <p class="font-bold pb-4 xl:p-auto">Education</p>
+        <div class="col-span-3">
+          <div
+            class="rounded-lg px-6 py-3 border border-[var(--border-gray)] bg-[var(--nav-gray)]">
+            <span class="font-semibold text-[var(--inactive-gray)] text-sm"
+              >BS Information Technology</span
+            >
+            <h3 class="font-bold text-lg">Rizal Technological University</h3>
+            <span class="text-sm">2023-Present</span>
+            <p class="text-base text-[var(--footer-gray)] leading-loose">
+              Relevant coursework include web design and development, graphic
+              design elective, 2D and 3D animation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

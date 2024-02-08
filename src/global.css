@@ -9,6 +9,7 @@
   --light-gray: #5b5b5b;
   --inactive-gray: #7e7e7e;
   --nav-gray: #1c1c1c;
+  --footer-gray: #888888;
 }
 
 body {
@@ -17,7 +18,8 @@ body {
   color: var(--white);
 }
 
-#shadow {
+#shadow,
+#copyButton {
   box-shadow: 0px -3px 17.9px 0px rgba(0, 0, 0, 0.25) inset,
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }

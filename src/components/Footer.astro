@@ -1,24 +1,112 @@
-<section
-  class="flex justify-center items-center flex-col bg-[#171717] py-32 border-t border-t-[var(--border-gray)] w-full">
-  <h1 class="text-4xl font-black">Need some design work done?</h1>
+---
+import { Icon } from "astro-icon/components";
+---
 
-  <p class="text-base pt-4 text-[#E2E2E2] text-center">
-    Schedule a free consultation call today to discover if I'm the perfect <br
-    />
+<section
+  class="flex justify-center items-center flex-col bg-[#171717] py-32 border-t border-t-[var(--border-gray)] w-full mt-16">
+  <h1 class="xl:text-4xl text-xl font-black text-center">
+    Need some design work done?
+  </h1>
+
+  <p class="text-base pt-4 text-[#E2E2E2] text-center xl:p-auto px-3 xl:w-1/">
+    Schedule a free consultation call today to discover if I'm the perfect
     designer for your project! Let's make your vision happen!
   </p>
 
   <div class="mt-8">
     <button
-      class="py-3 px-6 px-bg-[var(--cta-gray)] rounded-xl border border-[var(--border-gray)] font-bold hover:scale-[1.02] transition ease-in active:scale-90 hover:border-neutral-500 xl:block hidden xl:m-0 mx-2 xl:w-auto w-[96%]"
+      class="py-3 px-6 bg-[var(--cta-gray)] rounded-xl border border-[var(--border-gray)] font-bold hover:scale-[1.02] transition ease-in active:scale-90 hover:border-neutral-500 xl:m-0 mx-2 xl:w-auto w-[96%]"
       id="shadow">Get a Quote</button
     >
   </div>
 </section>
-<footer>
-  <div class="flex gap-2 items-center xl:justify-center">
-    <img src="niel-tortl.svg" alt="" />
-    <span class="text-xl font-bold"> niel montesa</span>
+<footer
+  class="py-16 xl:px-36 px-12 border-t border-t-[var(--border-gray)] bg-[#171717]">
+  <div
+    class="flex w-full xl:flex-row flex-col xl:justify-evenly justify-between gap-10">
+    <div>
+      <ul class="flex flex-col gap-2">
+        <li class="font-bold text-[var(--white)]">Niel Montesa</li>
+        <li>
+          <a
+            href="#"
+            class="text-[var(--footer-gray)] hover:text-[var(--white)]"
+            >About Me</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-[var(--footer-gray)] hover:text-[var(--white)]"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="mt-2">
+        <a href="#">
+          <Icon
+            name="mdi:instagram"
+            class="inline bg-inherit text-[var(--footer-gray)] hover:text-[var(--white)] text-2xl"
+          />
+        </a>
+        <a href="#">
+          <Icon
+            name="mdi:twitter"
+            class="inline bg-inherit text-[var(--footer-gray)] hover:text-[var(--white)] text-2xl"
+          />
+        </a>
+        <a href="#">
+          <Icon
+            name="mdi:linkedin"
+            class="inline bg-inherit text-[var(--footer-gray)] hover:text-[var(--white)] text-2xl"
+          />
+        </a>
+      </div>
+    </div>
+    <div>
+      <ul class="flex flex-col gap-2">
+        <li class="font-bold text-[var(--white)]">Portfolio</li>
+        <li>
+          <a
+            href="#"
+            class="text-[var(--footer-gray)] hover:text-[var(--white)]"
+            >Web Design</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-[var(--footer-gray)] hover:text-[var(--white)]"
+            >Book Covers</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="flex flex-col gap-2">
+        <li class="font-bold text-[var(--white)]">Writing</li>
+        <li>
+          <a
+            href="#"
+            class="text-[var(--footer-gray)] hover:text-[var(--white)]">Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-[var(--footer-gray)] hover:text-[var(--white)]"
+            >Medium</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="flex w-full flex-col xl:flex-row justify-center xl:items-center gap-4 mt-16">
+    <span class="text-[#5B5B5B]">Proudly developed using astro.js</span>
+    <span class="text-[#5B5B5B]">© Niel Montesa 2023</span>
+    <span class="text-[#A9A9A9] underline"> <a href="#">Jump to Top</a></span>
   </div>
 </footer>
 
