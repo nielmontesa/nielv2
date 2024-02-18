@@ -3,13 +3,14 @@ import { Icon } from "astro-icon/components";
 ---
 
 <section
-  class="flex justify-center items-center flex-col bg-[#171717] py-32 border-t border-t-[var(--border-gray)] w-full mt-16">
+  class="flex justify-center items-center flex-col bg-[var(--black)] py-32 border-t border-t-[var(--border-gray)] w-full mt-16">
   <h1 class="xl:text-4xl text-xl font-black text-center">
     Need some design work done?
   </h1>
 
-  <p class="text-base pt-4 text-[#E2E2E2] text-center xl:p-auto px-3 xl:w-1/">
-    Schedule a free consultation call today to discover if I'm the perfect
+  <p
+    class="text-lg font-semibold pt-4 text-[var(--inactive-gray)] text-center xl:p-auto px-3 xl:w-1/3">
+    Schedule a free discovery call today to figure out if I'm the perfect
     designer for your project! Let's make your vision happen!
   </p>
 
@@ -21,7 +22,7 @@ import { Icon } from "astro-icon/components";
   </div>
 </section>
 <footer
-  class="py-16 xl:px-36 px-12 border-t border-t-[var(--border-gray)] bg-[#171717]">
+  class="py-16 xl:px-36 px-12 border-t border-t-[var(--border-gray)] bg-[var(--nav-gray)]">
   <div
     class="flex w-full xl:flex-row flex-col xl:justify-evenly justify-between gap-10">
     <div>
@@ -103,15 +104,24 @@ import { Icon } from "astro-icon/components";
   </div>
 
   <div
-    class="flex w-full flex-col xl:flex-row justify-center xl:items-center gap-4 mt-16">
-    <span class="text-[#5B5B5B]">Proudly developed using astro.js</span>
-    <span class="text-[#5B5B5B]">© Niel Montesa 2023</span>
-    <span class="text-[#A9A9A9] underline"> <a href="#">Jump to Top</a></span>
+    class="flex w-full flex-col xl:flex-row justify-center xl:items-center gap-6 mt-24 xl:px-80">
+    <span class="text-[#b8b8b8]"
+      >Proudly developed using <a
+        href="https://astro.build"
+        target="_blank"
+        class="underline">astro.build</a
+      >
+    </span>
+    <span class="text-[#b8b8b8]">© Niel Montesa 2023</span>
+    <span class="text-[#8a8a8a] underline"> <a href="#">Jump to Top</a></span>
   </div>
 </footer>
 
 <style>
   section {
     background-image: url("../../public/tortls.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 </style>
