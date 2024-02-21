@@ -20,8 +20,9 @@ import EmailButton from "../components/EmailButton.astro";
     </p>
 
     <div
-      class="mt-8 bg-[var(--bg-secondary)] p-4 rounded-lg border border-[var(--border-gray)]">
-      <p class="text-base font-medium">Contact Form</p>
+      class="mt-8 bg-[var(--bg-secondary)] p-4 rounded-lg border border-[var(--border-gray)]"
+      id="shadow">
+      <p class="text-base font-bold">Contact Form</p>
 
       <form
         name="contact"
@@ -31,14 +32,14 @@ import EmailButton from "../components/EmailButton.astro";
         <div class="flex gap-4 lg:flex-row flex-col w-full">
           <input
             name="Name"
-            class="transition-all bg-[var(--button-gray)] p-2 rounded-md text-base outline-none hover:outline-[var(--border-gray)] active:outline-[var(--primary-gray)] focus:outline-[var(--border-gray)] placeholder-[var(--footer-gray)] w-full"
+            class="transition-all bg-[var(--light-gray)] p-2 rounded-md text-base outline-none hover:outline-[var(--border-gray)] active:outline-[var(--primary-gray)] focus:outline-[var(--border-gray)] placeholder-[var(--footer-gray)] w-full"
             type="text"
             placeholder="Your name"
             required
           />
           <input
             name="E-mail"
-            class="transition-all bg-[var(--button-gray)] p-2 rounded-md text-base outline-none hover:outline-[var(--border-gray)] active:outline-[var(--primary-gray)] focus:outline-[var(--border-gray)] placeholder-[var(--footer-gray)] w-full"
+            class="transition-all bg-[var(--light-gray)] p-2 rounded-md text-base outline-none hover:outline-[var(--border-gray)] active:outline-[var(--primary-gray)] focus:outline-[var(--border-gray)] placeholder-[var(--footer-gray)] w-full"
             type="email"
             placeholder="Your e-mail"
             required
@@ -46,7 +47,7 @@ import EmailButton from "../components/EmailButton.astro";
         </div>
         <textarea
           name="Message"
-          class="transition-all bg-[var(--button-gray)] p-2 rounded-md text-base outline-none hover:outline-[var(--border-gray)] active:outline-[var(--primary-gray)] focus:outline-[var(--border-gray)] placeholder-[var(--footer-gray)]"
+          class="transition-all bg-[var(--light-gray)] p-2 rounded-md text-base outline-none hover:outline-[var(--border-gray)] active:outline-[var(--primary-gray)] focus:outline-[var(--border-gray)] placeholder-[var(--footer-gray)]"
           required
           rows="10"
           placeholder="Your message"></textarea>
