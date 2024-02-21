@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import EmailButton from "../../components/EmailButton.astro";
+---
+
+<Layout title="Niel Montesa // Designer">
+  <main>
+    <section id="hero" class="h-[100vh] w-full">
+      <div class="text-center p-16 flex flex-col justify-center items-center">
+        <h1 class="xl:text-8xl text-4xl font-black text-[var(--black)]">
+          Writing
+        </h1>
+
+        <p class="text-lg pt-8 xl:w-1/3 text-[var(--inactive-gray)]">
+          A collection of my writing, ranging from blog posts and design guides
+          to opinionated discourse about film or music.
+        </p>
+
+        <div class="pt-8 lg:pb-0 pb-8 flex xl:flex-row flex-col gap-2">
+          <button
+            class="text-[var(--white)] py-3 px-6 bg-[var(--black)] rounded-xl border border-[var(--border-gray)] font-bold hover:scale-[1.02] transition ease-in active:scale-90 hover:border-neutral-500"
+            id="shadow">Get in Touch</button
+          >
+
+          <EmailButton />
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
