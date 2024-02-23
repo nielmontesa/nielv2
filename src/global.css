@@ -38,3 +38,25 @@ body {
 .hidden {
   display: hidden;
 }
+
+article h1 {
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: bold;
+}
+article h2 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+article p {
+  color: #5b5b5b;
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+}
+
+article p a {
+  color: #6c6c6c;
+  text-decoration: underline;
+}

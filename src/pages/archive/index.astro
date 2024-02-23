@@ -8,48 +8,23 @@ import EmailButton from "../../components/EmailButton.astro";
     <section id="hero" class="h-[100vh] w-full">
       <div class="text-center p-16 flex flex-col justify-center items-center">
         <h1 class="xl:text-8xl text-4xl font-black text-[var(--black)]">
-          Multidisciplinary <br />Designer & <br /> Web Developer
+          Design Archive
         </h1>
 
         <p class="text-lg pt-8 xl:w-1/3 text-[var(--inactive-gray)]">
-          Hey there! I’m Niel. I specialize in creating beautiful and effective
-          websites, book covers, and posters. Feel free to look around my
-          portfolio. Cheers!
+          This page is for random designs I made for fun or practice!
         </p>
 
         <div class="pt-8 lg:pb-0 pb-8 flex xl:flex-row flex-col gap-2">
-          <button
-            class="text-[var(--white)] py-3 px-6 bg-[var(--black)] rounded-xl border border-[var(--border-gray)] font-bold hover:scale-[1.02] transition ease-in active:scale-90 hover:border-neutral-500"
-            id="shadow">Check Out My Portfolio</button
-          >
-
-          <EmailButton />
-        </div>
-
-        <div
-          class="flex flex-col items-center justify-center text-[#7a7a7a] xl:w-1/3 xl:pt-16">
-          <p class="text-base">
-            “I highly recommend Niel for any design project; his go-getter
-            attitude alone makes him an invaluable asset to any team.”
-          </p>
-
-          <div class="flex items-center justify-center gap-2 pt-4">
-            <img src="max.png" alt="" />
-
-            <span class="text-[#767676] text-sm">
-              Maxence Voisin, Founder & CEO at ShineBright</span
+          <a href="/">
+            <button
+              class="text-[var(--white)] py-3 px-6 bg-[var(--black)] rounded-xl border border-[var(--border-gray)] font-bold hover:scale-[1.02] transition ease-in active:scale-90 hover:border-neutral-500"
+              id="shadow">Check my Main Portfolio</button
             >
-          </div>
+          </a>
+          <EmailButton />
         </div>
       </div>
     </section>
   </main>
 </Layout>
-
-<style>
-  #hero {
-    background-image: url("../../public/gradient_bg.png");
-    background-repeat: no-repeat;
-    background-position: top;
-  }
-</style>

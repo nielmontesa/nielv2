@@ -1,0 +1,32 @@
+---
+const { post } = Astro.props;
+
+const { alt, img, url, caption } = post.frontmatter;
+
+console.log(alt);
+import { Image } from "astro:assets";
+---
+
+<div class="opacity-100 hover:opacity-90 transition-all">
+  <a href={post.url}>
+    <Image
+      class="rounded border border-[var(--border-gray)] w-100"
+      src={img}
+      alt={alt}
+      width={1200}
+      height={1200}
+      loading="lazy"
+      decoding="async"
+      format="avif"
+    />
+  </a>
+</div>
+
+<style>
+  div {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+</style>

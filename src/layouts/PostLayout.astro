@@ -1,0 +1,48 @@
+---
+import "../global.css";
+
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title: string;
+}
+
+const { frontmatter } = Astro.props;
+const { title, type, role, date } = frontmatter;
+
+import ImageBox from "../components/ImageBox.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/niel-tortl.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <NavBar />
+    <section
+      class="border-b border-b-[var(--border-gray)] xl:flex justify-between items-center xl:px-36 px-10">
+      <div class="py-10">
+        <h1 class="text-4xl font-bold">{title}</h1>
+        <p class="font-medium mt-4">{type}</p>
+      </div>
+      <div class="xl:py-10 pb-10 xl:text-right">
+        <p class="xl:flex justify-end items-center gap-1 text-[#8c8c8c]">
+          Date Posted: {date}
+        </p>
+        <p class="font-medium mt-4 flex items-center">Role: {role}</p>
+      </div>
+    </section>
+    <article class="xl:px-[36rem] px-10 py-12 leading-10">
+      <slot />
+    </article>
+  </body>
+
+  <Footer />
+  <ViewTransitions />
+</html>

@@ -1,11 +1,15 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import EmailButton from "../../components/EmailButton.astro";
+
+import Design from "../../components/Design.astro";
+
+const allPosts = await Astro.glob("./*.mdx");
 ---
 
 <Layout title="Niel Montesa // Designer">
   <main>
-    <section id="hero" class="h-[100vh] w-full">
+    <section id="hero" class="w-full">
       <div class="text-center p-16 flex flex-col justify-center items-center">
         <h1 class="xl:text-8xl text-4xl font-black text-[var(--black)]">
           Book Covers
@@ -28,5 +32,13 @@ import EmailButton from "../../components/EmailButton.astro";
         </div>
       </div>
     </section>
+
+    <div class="mt-8 columns-1 lg:columns-3 gap-2 max-w-[100%] xl:px-36">
+      {
+        allPosts.map((post) => {
+          return <Design {post} />;
+        })
+      }
+    </div>
   </main>
 </Layout>
